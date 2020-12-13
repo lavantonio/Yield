@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto:400,700,900&display=swap');
+:root {
+    --orange: #f49c42;
+    --pink: #e04067;
+    --transition: .4s ease;
+    --text: #222;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: var(--text);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+.btn-warning {
+    background: var(--orange);
+    border: 1px solid var(--orange);
+    color: white;
+    border-radius: 0%;
+}
+.btn-warning:hover {
+    background: var(--pink);
+    color: white;
+    border: 1px solid var(--pink);
+}
+/*************
+  Navigation
+**************/
+.navigation .bg-light{
+  background-color: var(--orange)!important;
+}
+.navigation span a{
+  padding: 0 15px;
+  color: white !important;
+}
+.navigation a:hover{
+  color: var(--pink) !important;
+  transition: var(--transition);
+}
+.navigation span a:first-child{
+  padding-left: 0;
+}
+/*************
+    Slider
+**************/
+.slider h5 {
+  color: var(--pink);
+  font-size: 2rem;
+}
+.slider .pOrange {
+  color: var(--orange) !important;
+  font-size: 2rem;
+}
+.slider .pBlack {
+  color: black !important;
+}
+.slider .carousel-caption {
+  top: 25%;
+}
+/*************
+    About
+**************/
+.about{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+/*************
+    Order
+**************/
+.order {
+  background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(img/watermellon.jpg);
+  height: 60vh;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/*************
+    Meet
+**************/
+.meet h1{
+  color: var(--pink) !important;
+}
+.meet .pink {
+  background-color: var(--pink);
+  padding: 8px;
+  color: white;
+}
+.meet img {
+    box-shadow: 0 0 20px var(--text);
+  }
+/*************
+    Follow
+**************/
+.follow{
+  background-color: var(--pink);
+}
+.follow a{
+  font-size: 30px;
+  color: white;
+}
+.follow a:hover{
+  color: black;
+  transition: var(--transition);
+}
+/*************
+ Slider phone
+**************/
+.sliderPhone h5 {
+  color: var(--pink);
+  font-size: 2rem;
+}
+.sliderPhone .pOrange {
+  color: var(--orange) !important;
+  font-size: 2rem;
+}
+.sliderPhone .pBlack {
+  color: black !important;
+}
+.sliderPhone{
+  display: none;
+}
+/*************
+  Responsive
+**************/
+@media(max-width: 768px){
+.slider {
+  display: none;
+}
+.sliderPhone{
+  display:block;
+}
+.about .col-md-7{
+  padding-top: 30px;
+}
+.order{
+  height: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  word-wrap: break-word;
+}
